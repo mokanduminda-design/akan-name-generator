@@ -44,12 +44,12 @@
             <br>
         <div class="input">    
         <div class="birthdate">
-            <input type="number" min="1" max="31" placeholder="DD" />
-            <input type="number" min="1" max="12" placeholder="MM" />
-            <input type="number" min="1800" max="2027"  placeholder="YYYY" />
+            <input type="number" id="day"  placeholder="DD" />
+            <input type="number" id= "month" placeholder="MM" />
+            <input type="number" id="year" placeholder="YYYY" />
         </div>
         </div>
-         </form>
+         
          <!-- Gender input -->
           <div class="input">
     <label>👤 Select Your Gender</label>
@@ -63,10 +63,12 @@
     </div>
 
         <!-- Calculation Button -->
-         <button class="calculator">Discover My Akan Name!</button>
+         <button type="button" onclick="calculateAkanName()" class="calculator">Discover My Akan Name!</button>
+
     </section>
     <!-- Results -->
        <h2 id="result"></h2>
+</form>
     <!-- Footer -->
      <footer>
       Built with HTML, CSS & JavaScript |
