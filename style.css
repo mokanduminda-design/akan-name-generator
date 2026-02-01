@@ -5,6 +5,10 @@ body {
     margin: 0;
     background: #fff7e6;
     color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 header {
     text-align: center;
@@ -26,6 +30,9 @@ header {
     max-width: 800px; 
     width: 90%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 table {
   width: 100%;
@@ -55,6 +62,52 @@ input {
   border: 1px solid #d1d5db;
   font-size: 18px;
   text-align: center;
+}
+.gender-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.gender-buttons button {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 2px solid #d1d5db;
+  background: white;
+  font-size: 1rem;
+  cursor: crosshair;
+}
+
+.gender-buttons button:hover {
+  border-color: #fb923c;
+}
+.calculator {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #fb923c, #f97316);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.calculator:hover {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+footer a {
+  color: #f97316;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 
