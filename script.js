@@ -33,17 +33,18 @@ function calculateAkanName() {
     const femaleNames = ["Ama", "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
     const days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
+    const dayName = days[d];
     let akanName;
 
-if (gender === "male") {
-    akanName = maleNames[d];
-} else (gender === "female") {
-    akanName = femaleNames[d];
+    if (gender === "male") {
+        akanName = maleNames[d];
+    } else if (gender === "female") {
+        akanName = femaleNames[d];
+    }
 
+    result.textContent = `You were born on ${dayName}. Your Akan name is ${akanName}.`;
 }
 
-result.textContent = `You were born on ${dayName}. Your Akan name is ${akanName}.`;
-}
 
 [dayInput, monthInput, yearInput].forEach(input => {
     input.addEventListener("keypress", function(event) {
