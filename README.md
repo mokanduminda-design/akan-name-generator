@@ -83,3 +83,5 @@ Your result will be displayed instantly:
 
 ## 👨‍💻 Author
 Developed with ❤️ by  [Mokandu Minda](https://github.com/mokanduminda-design)
+
+Link to live site  [Akan Name Generator](https://mokanduminda-design.github.io/akan-name-generator/)
