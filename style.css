@@ -81,6 +81,10 @@ input {
 .gender-buttons button:hover {
   border-color: #fb923c;
 }
+.gender-buttons:active {
+  border-color: #ca8e5c; 
+  color: white;
+}
 .calculator {
   width: 100%;
   padding: 20px;

@@ -52,15 +52,21 @@
          </form>
          <!-- Gender input -->
           <div class="input">
-            <label>👤 Select Your Gender</label>
-             <div class="gender-buttons">
-                 <button type="button">Male</button>
-                <button type="button">Female</button>
-             </div>
-          </div>
+    <label>👤 Select Your Gender</label>
+         <div class="gender-radio">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        </div>
+    </div>
+
         <!-- Calculation Button -->
          <button class="calculator">Discover My Akan Name!</button>
     </section>
+    <!-- Results -->
+       <h2 id="result"></h2>
     <!-- Footer -->
      <footer>
       Built with HTML, CSS & JavaScript |
