@@ -21,3 +21,23 @@ function calculateAkanName() {
         alert("Invalid day or month.");
         return;
     }
+
+    const CC = Math.floor(year / 100);
+    const YY = year % 100;
+    const MM = month;
+    const DD = day;
+
+    let d = Math.floor(((4 * CC - 2 * CC - 1) + (5 * YY / 4) + (26 * (MM + 1) / 10) + DD) % 7);
+   
+    const maleNames = ["Kwame", "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi"];
+    const femaleNames = ["Ama", "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua"];
+    const days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+    let akanName;
+
+if (gender === "male") {
+    akanName = maleNames[d];
+} else (gender === "female") {
+    akanName = femaleNames[d];
+
+}
