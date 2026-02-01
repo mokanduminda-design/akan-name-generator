@@ -41,3 +41,14 @@ if (gender === "male") {
     akanName = femaleNames[d];
 
 }
+
+result.textContent = `You were born on ${dayName}. Your Akan name is ${akanName}.`;
+}
+
+[dayInput, monthInput, yearInput].forEach(input => {
+    input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            calculateAkanName();
+        }
+    });
+});
